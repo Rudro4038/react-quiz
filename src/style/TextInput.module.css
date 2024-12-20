@@ -1,0 +1,33 @@
+.TextInput {
+  position: relative; /* Allows positioning of child elements */
+  margin-bottom: 15px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  width: 300px;
+}
+
+/* Input Field */
+.TextInput input {
+  width: 100%;
+  padding: 10px 10px 10px 35px; /* Left padding for the icon */
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.TextInput input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+/* Span (Icon) */
+.TextInput span {
+  position: absolute;
+  left: 10px; /* Position the icon inside the input */
+  color: #888;
+  pointer-events: none; /* Makes the icon non-interactive */
+  font-size: 1.2rem;
+  margin: 3px;
+}

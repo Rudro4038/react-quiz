@@ -1,0 +1,20 @@
+.Illustration {
+  width: 100%; /* Make the image fill the width of the parent */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 1px 1px 0px black; */
+  /* filter: drop-shadow(1px 1px 2px black); */
+}
+
+.Illustration :hover {
+  filter: drop-shadow(1px 1px 3px rgb(169, 9, 9));
+}
+
+.Illustration img {
+  width: 100%; /* Make the image fill the width of the parent */
+  height: 100%; /* Make the image fill the height of the parent */
+  object-fit: cover; /* Ensures the image covers the entire container without distortion */
+  display: block;
+}

@@ -1,0 +1,11 @@
+.qtitle {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  font-weight: bolder;
+}
+
+.qtitle span {
+  margin-right: 3px;
+  color: green;
+}

@@ -1,0 +1,10 @@
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+  scrollbar-width: 0px;
+  flex-shrink: 0;
+}

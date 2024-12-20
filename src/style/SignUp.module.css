@@ -1,0 +1,53 @@
+.SignUp {
+  /* height: 600px; */
+  height: 100%;
+}
+
+.SignUp h1 {
+  margin: 10px 1rem;
+}
+
+.Row {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.Coloumn {
+  width: 50%;
+  padding: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formContainer {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formContainer h2 {
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1060px) {
+  .Coloumn1 {
+    display: none;
+  }
+
+  .formContainer h2 {
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .formContainer h2 {
+    font-size: 1rem;
+  }
+}
