@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 import styles from "../style/ProgressBar.module.css";
+
 // import { Link } from "react-router-dom";
-// eslint-disable-next-line react/prop-types
 export default function ProgressBar({
   handleRightButton,
   handleLeftButton,

@@ -35,7 +35,7 @@ import Layout from "./Layout";
 import { AuthProvider } from "../context/AuthContext";
 import Quiz from "../pages/Quiz";
 import Results from "../pages/Results";
-import Signup from "../pages/Signup";
+import Signup from "../pages/SignUp";
 import PrivateRoute from "./PrivateRoute";
 import PublicRoute from "./PublicRoute";
 
