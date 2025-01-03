@@ -30,10 +30,11 @@
   margin: 0rem 0 20px 1rem;
   padding: 3px 0;
   background: var(--bodyBackground);
+  border-bottom: 1px solid var(--bodyBorder);
 }
 
 .hr {
   width: 90%; /* Adjust width as needed */
   margin: 0 auto; /* Centers the line horizontally */
-  border: 0.5px solid rgb(193, 188, 188);
+  border: 0.5px solid rgb(152, 152, 152);
 }

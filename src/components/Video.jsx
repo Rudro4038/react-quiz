@@ -1,26 +1,26 @@
-import image from "../assets/images/wallpaperflare.com_wallpaper.jpg";
+/* eslint-disable react/prop-types */
+// import image from "../assets/images/wallpaperflare.com_wallpaper.jpg";
+import { Link } from "react-router-dom";
 import styles from "../style/Video.module.css";
 
-export default function Video() {
+export default function Video({ video }) {
   return (
     <div className={styles.video}>
       <div className={styles.card}>
-        <a href="/Quiz">
+        <Link to={`/Quiz/${video.youtubeID}`}>
           <div className={styles.imgBox}>
-            <img src={image} alt=""></img>
+            <img
+              src={`https://img.youtube.com/vi/${video.youtubeID}/maxresdefault.jpg`}
+              alt=""
+            ></img>
           </div>
-        </a>
+        </Link>
         <div className={styles.footNote}>
-          <b>John kay</b> <i>7 min read</i>
+          <b>{video.title}</b>
         </div>
         <div className={styles.description}>
           <a href="/Quiz">
-            <p>
-              {" "}
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-              minima fuga tempore? Quas, deserunt? Laboriosam saepe veniam optio
-              ut voluptates officiis corrupti obcaecati nam aut.
-            </p>
+            <i>{video.noq} Questions</i>
           </a>
         </div>
       </div>

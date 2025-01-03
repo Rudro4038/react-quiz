@@ -1,4 +1,6 @@
 .videos {
+  background: #b9b7b7;
+  padding-bottom: 60px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -7,4 +9,5 @@
   gap: 10px;
   scrollbar-width: 0px;
   flex-shrink: 0;
+  overflow: hidden;
 }

@@ -1,11 +1,8 @@
-import styles from "../style/Checkbox.module.css";
-
-export default function Checkbox() {
+// eslint-disable-next-line react/prop-types
+export default function Checkbox({ className, text, ...rest }) {
   return (
-    <>
-      <label className={styles.answer} htmlFor="option1">
-        <input type="checkbox" id="option1" />A New Hope 1
-      </label>
-    </>
+    <label className={className} style={{ marginBottom: "10px" }}>
+      <input type="checkbox" {...rest} /> <span>{text}</span>
+    </label>
   );
 }

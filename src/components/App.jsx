@@ -32,12 +32,12 @@ import Home from "../pages/Home";
 import "../style/App.css";
 import Layout from "./Layout";
 // import Login from "../pages/Login";
+import { AuthProvider } from "../context/AuthContext";
 import Quiz from "../pages/Quiz";
 import Results from "../pages/Results";
 import Signup from "../pages/Signup";
-import { AuthProvider } from "../context/AuthContext";
-// import PrivateRoute from "./PrivateRoute";
-// import PublicRoute from "./PublicRoute";
+import PrivateRoute from "./PrivateRoute";
+import PublicRoute from "./PublicRoute";
 
 function App() {
   return (
@@ -47,15 +47,33 @@ function App() {
           <Routes>
             <Route path="/" element={<Navigate to="/home" />} />
             <Route path="/home" element={<Home />} />
-            <Route path="/signup" element={<Signup signUpflag={true} />} />
-            <Route path="/login" element={<Signup signUpflag={false} />} />
-            <Route path="/results" element={<Results />} />
-            <Route path="/quiz" element={<Quiz />} />
 
-            {/* <PublicRoute exact path="/login" component={Login} /> */}
+            <Route
+              path="/signup"
+              element={
+                <PublicRoute>
+                  <Signup signUpflag={true} />
+                </PublicRoute>
+              }
+            />
 
-            {/* <PrivateRoute exact path="/quiz/:id" component={Quiz} />
-          <PrivateRoute exact path="/result/:id" component={Results} /> */}
+            <Route
+              path="/login"
+              element={
+                <PublicRoute>
+                  <Signup signUpflag={false} />
+                </PublicRoute>
+              }
+            />
+
+            <Route
+              path="/quiz/:youtubeID"
+              element={<PrivateRoute element={<Quiz />} />}
+            />
+            <Route
+              path="/results/:youtubeID"
+              element={<PrivateRoute element={<Results />} />}
+            />
           </Routes>
         </Layout>
       </AuthProvider>

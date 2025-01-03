@@ -1,16 +1,25 @@
 import styles from "../style/Answers.module.css";
-import Checkbox from "./Checkbox";
+import Answer from "./Answer";
 
-export default function Answer() {
+// eslint-disable-next-line react/prop-types
+export default function Answers({ options, putAnswer, idx, qna }) {
+  // console.log(options);
   return (
     <>
       <div className={styles.Answers}>
-        <Checkbox></Checkbox>
-        <Checkbox></Checkbox>
-        <Checkbox></Checkbox>
-        <Checkbox></Checkbox>
-        <Checkbox></Checkbox>
-        <Checkbox></Checkbox>
+        {
+          // eslint-disable-next-line react/prop-types
+          options.map((element, index) => (
+            <Answer
+              key={index}
+              title={element.title}
+              optionIdx={index}
+              idx={idx}
+              putAnswer={putAnswer}
+              qna={qna}
+            />
+          ))
+        }
       </div>
     </>
   );

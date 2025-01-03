@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
 :root {
-  --bodyBackground: #ebebeb;
+  --bodyBackground: #adadad;
   --successGreen: #00ff84;
   --dangerRed: #ffc0c7;
   --questionBG: #e4e8ee;
@@ -42,6 +42,15 @@ h4 {
 
 .error {
   background-color: var(--dangerRed);
+  padding: 0.6rem 1.2rem;
+  margin-top: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.success {
+  background-color: var(--successGreen);
   padding: 0.6rem 1.2rem;
   margin-top: 10px;
   border-radius: 8px;

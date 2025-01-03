@@ -1,14 +1,30 @@
-import Answers from "../components/Answers";
+import Answer from "../components/Answer";
 import styles from "../style/Result.module.css";
 
-export default function Result() {
+// eslint-disable-next-line react/prop-types
+export default function Result({ title, idx, qna, results }) {
   return (
     <>
       <div className={styles.qtitle}>
         <span className="material-icons-outlined"> help_outline </span>
-        Here goes the question from Learn with Sumit?
+        {title}
       </div>
-      <Answers />
+
+      <div className={styles.Answers}>
+        {
+          // eslint-disable-next-line  react/prop-types
+          qna[idx].options.map((option, index) => (
+            <Answer
+              key={index}
+              title={option.title}
+              idx={idx}
+              qna={qna}
+              results={results}
+              optionIdx={index}
+            />
+          ))
+        }
+      </div>
     </>
   );
 }

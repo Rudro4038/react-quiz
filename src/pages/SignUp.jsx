@@ -1,51 +1,13 @@
-import Form from "../components/Form";
-import Illustration from "../components/Illustration";
-import SignUpLogInButton from "../components/SignUpLogInButton";
-import TextInput from "../components/TextInput";
-import styles from "../style/SignUp.module.css";
-
 import logInImage from "../assets/images/login.svg";
 import signUPImage from "../assets/images/signup.svg";
+import Illustration from "../components/Illustration";
+import LogInForm from "../components/LogInForm";
+import SignUpForm from "../components/SignUpForm";
+import styles from "../style/SignUp.module.css";
 
 // eslint-disable-next-line react/prop-types
 export default function SignUp({ signUpflag }) {
-  console.log(signUpflag);
-
-  const signUpForm = (
-    <>
-      <TextInput type="text" placeholder="Enter name" icon="person"></TextInput>
-      <TextInput
-        type="text"
-        placeholder="Enter email"
-        icon="alternate_email"
-      ></TextInput>
-      <TextInput
-        type="password"
-        placeholder="Enter password"
-        icon="lock"
-      ></TextInput>
-      <TextInput
-        type="password"
-        placeholder="Confirm password"
-        icon="lock_clock"
-      ></TextInput>
-    </>
-  );
-
-  const logInForm = (
-    <>
-      <TextInput
-        type="text"
-        placeholder="Enter email"
-        icon="alternate_email"
-      ></TextInput>
-      <TextInput
-        type="password"
-        placeholder="Enter password"
-        icon="lock"
-      ></TextInput>
-    </>
-  );
+  // console.log(signUpflag);
 
   return (
     <div className={styles.SignUp}>
@@ -55,15 +17,7 @@ export default function SignUp({ signUpflag }) {
         </div>
         <div className={styles.Coloumn}>
           <div className={styles.formContainer}>
-            <h2>{signUpflag ? "Sign up" : "Sign In"}</h2>
-            <Form>{signUpflag ? signUpForm : logInForm}</Form>
-            <SignUpLogInButton>
-              {signUpflag ? "Register" : "Log In"}
-            </SignUpLogInButton>
-
-            <div className="info">
-              Already have an account? <a href="/login">Login</a> instead.
-            </div>
+            {signUpflag ? <SignUpForm /> : <LogInForm />}
           </div>
         </div>
       </div>

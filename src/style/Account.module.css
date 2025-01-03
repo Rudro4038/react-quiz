@@ -1,4 +1,5 @@
 .accountContainer {
+  color: red;
   width: 50%;
   display: flex;
   gap: 0.5rem;
@@ -10,4 +11,14 @@
 
 .accountContainer > span:last-child {
   cursor: pointer;
+}
+
+.names {
+  color: rgb(70, 70, 70);
+  font-weight: 900;
+}
+
+.names:hover {
+  color: rgb(0, 0, 0);
+  font-weight: 900;
 }
