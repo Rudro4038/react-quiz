@@ -1,0 +1,52 @@
+.navbar {
+  background-color: #dbf0ff;
+  padding: 2px;
+  display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  justify-content: space-between;
+  border-bottom: 1px solid #424141;
+  z-index: 1;
+}
+
+.navbar ul {
+  width: 50%;
+  height: 10vh;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navbar ul:first-child {
+  margin-left: 4vw;
+}
+
+.navbar ul li {
+  display: flex;
+}
+
+.navbar .brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .brand h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.navbar .brand img {
+  width: 60px;
+  height: 50px;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 640px) {
+  .navbar .brand h3 {
+    display: none;
+  }
+}

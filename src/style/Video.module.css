@@ -1,0 +1,50 @@
+.video {
+  /* border: 2px solid red; */
+  height: 290px;
+  width: 250px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  /* margin-left: 4vw;
+    margin-right: 4.5vw;
+    margin-top: 3vh; */
+}
+
+.card {
+  background: var(--bodyBackground);
+  margin: 60px 10px 10px 10px;
+  padding: 5px 5px 5px 5px;
+  width: 90%;
+  height: 90%;
+  border: 2px solid #2c2c2c;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 7px 7px 5px rgb(115, 115, 115);
+}
+
+.card:hover {
+  box-shadow: unset;
+  transform: scale(0.98);
+}
+
+.imgBox {
+  height: 60%;
+  width: 100%;
+  display: contents;
+}
+
+.imgBox img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.footNote {
+  padding: 2%;
+  font-weight: 600;
+}
+
+.description p {
+  padding: 2%;
+  color: rgba(73, 66, 66, 0.8);
+}

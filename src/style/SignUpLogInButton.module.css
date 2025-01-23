@@ -1,0 +1,60 @@
+/*.SignUpLogInButton {
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 2px;
+  background: #008000;
+  color: #e51212;
+}
+
+.SignUpLogInButton:hover {
+  background: rgb(3, 116, 3);
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px #036103;
+}
+
+.SignUpLogInButton b {
+  color: #000000;
+}
+*/
+
+.SignUpLogInButton {
+  width: 100%; /* Full width */
+  height: 50px; /* Adjust height as needed */
+  border-radius: 8px; /* Rounded corners */
+  background: linear-gradient(135deg, #32a852, #238641); /* Gradient effect */
+  color: #ffffff; /* White text color */
+  font-size: 16px; /* Text size */
+  font-weight: bold; /* Bold text */
+  text-align: center; /* Center the text */
+  border: none; /* Remove border */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.SignUpLogInButton:hover {
+  background: linear-gradient(
+    135deg,
+    #238641,
+    #1d6e38
+  ); /* Darken gradient on hover */
+  transform: translateY(-2px); /* Raise button slightly */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+}
+
+.SignUpLogInButton:active {
+  transform: translateY(0); /* Reset the button position on click */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background: linear-gradient(
+    135deg,
+    #1d6e38,
+    #15552b
+  ); /* Darker gradient on click */
+}
+
+.SignUpLogInButton b {
+  color: inherit; /* Use button's color for text */
+  font-size: inherit; /* Inherit font size */
+}
